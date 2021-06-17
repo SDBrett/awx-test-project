@@ -1,0 +1,17 @@
+---
+roles:
+  - name: https://github.com/sdbrett/manage-vsphere-vm.git
+    type: git
+    version: main
+  - name: https://github.com/sdbrett/manage-olvm-vm.git
+    type: git
+    version: main
+  - name: https://github.com/sdbrett/manage-dns.git
+    type: git
+    version: main
+  - name: https://github.com/sdbrett/manage-ip.git
+    type: git
+    version: main
+  - name: https://github.com/sdbrett/avamar-backup.git
+    type: git
+    version: main
