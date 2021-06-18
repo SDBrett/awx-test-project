@@ -1,0 +1,17 @@
+---
+hosts: all
+include_vars:
+  vars/decom-vsphere-vm.yml
+tasks:
+  - name: decom vshpere vm
+    include_role:
+      name: decom-vm
+  - name: unregister ip
+    include_role:
+      name: manage-ip
+  - name: remove dns
+    include_role:
+      name: manage-dns
+  - name: send notice
+    include_role:
+      name: email-people
